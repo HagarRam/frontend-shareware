@@ -1,0 +1,74 @@
+.daily-tip {
+	background-color: #acacac ;
+	width: 250px;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+	height: 110px;
+	border-top-left-radius: 15px;
+}
+
+.daily-tip-title {
+	display: flex;
+	justify-content: center;
+	color: black;
+	font-weight: 400;
+	padding-top: 5px;
+}
+
+.tip-comment {
+	padding: 3px;
+	font-size: 15px;
+	padding-left: 6px;
+}
+
+.tip-username {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	bottom: 2%;
+	right: 5%;
+	font-size: 14px;
+}
+
+.all-tips-link {
+	all: unset;
+	font-size: 14px;
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+}
+.all-tips-link:hover {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.tip-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 150px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.dots-link {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+@media (max-width: 700px) {
+	.daily-tip {
+		right: -210px;
+		transition: all 0.5s;
+	}
+	.daily-tip:hover {
+		right: 0;
+	}
+}

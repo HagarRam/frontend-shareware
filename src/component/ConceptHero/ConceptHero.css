@@ -1,0 +1,272 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.concept-hero-container {
+	position: relative;
+	width: 100%;
+	height: 480px;
+	background-color: white;
+	font-family: 'Anton', sans-serif;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+		url(../../assets/images/definition-corporate.jpg);
+	background-color: black;
+}
+
+.platform-subtitle {
+	padding-left: 5%;
+	color: #2c3333;
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
+	position: absolute;
+	left: 50%;
+	top: 22%;
+	transform: translate(-50%, 0%);
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	color: white;
+	font-size: 22px;
+}
+
+.sharing-caring-title {
+	padding-left: 2%;
+	font-size: 40px;
+	color: #2c3333;
+	font-family: 'Anton', sans-serif;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translate(-50%, 50%);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	-webkit-text-stroke: 0.5px white;
+}
+
+.hero-circle {
+	width: 160px;
+	height: 160px;
+	border: 2px solid white;
+	border-radius: 50%;
+	position: relative;
+	font-size: 20px;
+	box-shadow: 3px 3px 3px white;
+}
+
+.hero-circle2 {
+	width: 220px;
+	height: 220px;
+	border: 2px solid white;
+	border-radius: 50%;
+	position: relative;
+	font-size: 20px;
+	box-shadow: 3px 3px 3px white;
+}
+
+.c-line1 {
+	position: absolute;
+	top: 60%;
+	left: 16%;
+	transform: translate(-50%, -50%);
+}
+.c-line2 {
+	position: absolute;
+	top: 36%;
+	left: 23%;
+	transform: translate(-50%, -50%);
+}
+.c-line3 {
+	position: absolute;
+	top: 70%;
+	left: 26%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.team-icon {
+	width: 250px;
+	height: auto;
+	position: absolute;
+	bottom: 200px;
+	right: 15%;
+}
+
+.corporate-img {
+	width: 600px;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	border-radius: 20px;
+	outline: 2px solid white;
+	outline-offset: -15px;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	gap: 10px;
+	position: absolute;
+	bottom: -75px;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	border-radius: 10px;
+	align-items: center;
+	height: 90px;
+	width: 85%;
+	z-index: 1;
+	background-color: #ecd4eb;
+}
+
+.input-container #input {
+	border-radius: 10px;
+	width: 80%;
+	height: 45px;
+	border: 0;
+	font-family: 'Anton', sans-serif;
+	padding-left: 20px;
+}
+
+.input-container label {
+	position: absolute;
+	left: 55px;
+	padding-top: 75px;
+	font-size: 12px;
+	color: red;
+	font-weight: 500;
+	display: none;
+}
+.input-container #search-button {
+	border-radius: 10px;
+	height: 45px;
+	width: 12%;
+	font-family: 'Anton', sans-serif;
+	border-color: white;
+	text-align: center;
+	letter-spacing: 0.67px;
+}
+#search-button:hover {
+	color: white;
+	cursor: pointer;
+}
+#search-button:active {
+	border: 1px solid black;
+	box-shadow: 2px 10px 10px hsla(0, 0%, 69%, 1.25);
+}
+
+.no-matches-search {
+	position: absolute;
+	bottom: 4px;
+	left: 45px;
+	font-size: 13px;
+	color: #00000073;
+}
+.matches-search {
+	display: none;
+}
+#subjects-list {
+    margin-top: 200px;
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    width: 80%;
+    left: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 10px 10px;
+    height: 151px;;
+    overflow-y: scroll;
+}
+
+#subjects-list::-webkit-scrollbar {
+	width: 100%;
+}
+
+#subjects-list::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+#subjects-list::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+#subjects-list::-webkit-scrollbar-thumb:hover {
+	background: transparent;
+}
+
+.subject-option {
+    display: flex;
+	align-items: center;
+    background-color: #ecd4eb;
+    border: 0px solid white;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 600;
+	cursor: pointer;
+}
+
+.subject-option:hover {
+	font-size: 18px;
+}
+@media (max-width: 700px) {
+	.sharing-caring-title {
+		padding-left: 2%;
+		font-size: 28px;
+		width: 250px;
+	}
+
+	.platform-subtitle {
+		font-family: 'Anton', sans-serif;
+		font-size: 16px;
+		top: 18%;
+		width: 250px;
+	}
+	.hero-circle {
+		width: 120px;
+		height: 120px;
+	}
+	.hero-circle2 {
+		width: 150px;
+		height: 150px;
+	}
+	.hero-content {
+		font-size: 17px;
+	}
+
+	.c-line1 {
+		top: 60%;
+		left: 16%;
+	}
+	.c-line2 {
+		top: 42%;
+		left: 32%;
+	}
+	.c-line3 {
+		top: 70%;
+		left: 38%;
+	}
+	.input-container #search-button {
+		font-size: 11px;
+	}
+	.input-container #input {
+		width: 70%;
+	}
+
+	#subjects-list {
+		left:20px;
+	}
+}

@@ -1,0 +1,10 @@
+.information-add-tip {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	color: #ecd4eb;
+	gap: 20px;
+	padding-top: 20px;
+}

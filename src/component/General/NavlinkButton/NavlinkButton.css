@@ -1,0 +1,13 @@
+* {
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+.button {
+	all: unset;
+	cursor: pointer;
+	color: hsl(0, 0%, 75%);
+}
+
+.button:hover {
+	color: black;
+}
